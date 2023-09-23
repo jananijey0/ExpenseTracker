@@ -166,10 +166,18 @@ export default function LandingPage(props) {
           )}
        
         </div>
-        <div className="my-auto mt-20 w-full">
+        {/* <div className="my-auto mt-20 w-full">
         <Example/>
-          {/* <img src={Vector} alt="join now" /> */}
-        </div>
+          <img src={Vector} alt="join now" />
+        </div> */}
+         <div className="my-auto mt-20 w-full">
+        {/* Conditional rendering */}
+        {props.isLoggedIn ? (
+          <Example />
+        ) : (
+          <img src={Vector} alt="join now" />
+        )}
+      </div>
       </div>
     </div>
   );
