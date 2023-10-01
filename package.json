@@ -4,7 +4,7 @@
   "description": "backend app for expense-tracker-app",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start-server": "node app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --legacy-peer --prefix client && npm run build --prefix client",
     "test": "echo \"Error: no test  specified\" && exit 1",
     "install": "npm install"
