@@ -4,7 +4,7 @@ export default function Example() {
   const [news, setNews] = useState([]);
   const [currentNewsIndex, setCurrentNewsIndex] = useState(0);
 
-  const url = 'https://newsapi.org/v2/everything?q="finance"+"savings"&apiKey=5cdbd4a506bd417285a4305d1bee189c';
+  const url = 'https://newsapi.org/v2/everything?q="financialadvice"OR"savings"OR"investment"OR"tipstoearn"&apiKey=5cdbd4a506bd417285a4305d1bee189c';
 
 
   const fetchApiData = () => {
